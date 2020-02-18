@@ -30,7 +30,12 @@ pipeline {
             steps {
 		    
 	
-                sh "${M2_HOME}/bin/mvn test"
+             //   sh "${M2_HOME}/bin/mvn test"
+		    sh "${M2_HOME}/bin/ -Dtest=GoogleTest test"
+		    
+            // mvn -Dtest=TestCircle test
+	
+		    
             }
         }
         stage('Destroy - After Running tests on Containers') { 
