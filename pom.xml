@@ -30,7 +30,8 @@
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.11</version>
-        </dependency>
+           <scope>test</scope>   
+    </dependency>
 </dependencies>
 
 
